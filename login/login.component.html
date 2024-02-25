@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<div class="main">
+  <div class="left">
+    <div class="container">
+      <p>Your time, your schedule, our queue.</p>
+    </div>
+  </div>
+  <div class="right">
+    <div class="body">
+      <form
+        formGroup="loginForm"
+        autocomplete="new-password"
+        (ngSubmit)="onSubmit()"
+      >
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+
+        <img
+          src="assets/Logo/AppointMeLogo.png"
+          alt="Logo"
+          style="
+            width: 400px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          "
+        />
+
+        <h1>LOGIN</h1>
+
+        <div class="form-control">
+          <i class="bx bx-user"></i>
+          <input
+            type="text"
+            placeholder="Email"
+            formControlName="email"
+            id="email"
+            autocomplete="new-password"
+
+          />
+        </div>
+
+        <div class="form-control">
+          <i class="bx bx-lock"></i>
+          <input
+            type="text"
+            placeholder="Password"
+            formControlName="password"
+            id="password"
+            autocomplete="new-password"
+
+          />
+        </div>
+
+        <div class="remember-forgot">
+          <label>
+            <input type="checkbox" class="round-checkbox" />&nbsp;&nbsp;Remember
+            me</label
+          >
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit">LOGIN</button>
+
+        <hr />
+
+        <div class="register-link">
+          <p>Don't have an account? <a href="#"> REGISTER</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
